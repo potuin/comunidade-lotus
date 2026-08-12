@@ -125,3 +125,124 @@ body {
     padding: 0 1rem;
   }
 }
+
+/* --- NAVEGAÇÃO NO CABEÇALHO --- */
+.site-nav {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 8px;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+.site-nav a:hover, .site-nav a.active {
+  opacity: 1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* --- LAYOUT DA PÁGINA DE OBRAS MAIORES --- */
+.library-large {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Cartão Grande (Mesmo estilo dos cartões pequenos, mas em formato horizontal) */
+.card-large {
+  background: #ffffff;
+  border-radius: 20px; /* Cantos bem arredondados como a tua imagem */
+  padding: 35px;
+  box-shadow: 0 10px 25px rgba(160, 120, 180, 0.15); /* Sombras roxas suaves */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-large:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(160, 120, 180, 0.25);
+}
+
+/* Capa do Livro */
+.card-large .work-cover {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.card-large .work-cover img {
+  width: 100%;
+  max-width: 210px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.card-large .work-cover img:hover {
+  transform: scale(1.03);
+}
+
+/* Detalhes do Texto */
+.card-large .work-info {
+  flex: 2;
+  min-width: 280px;
+  text-align: left; /* Alinhado à esquerda para facilitar a leitura da sinopse */
+}
+
+.tag-lila {
+  background-color: #f0e6f8;
+  color: #7a42a0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.card-large h2 {
+  color: #6b359c; /* Roxo lilás da tua paleta */
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card-large .quote {
+  color: #888888;
+  font-size: 0.98rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.card-large .synopsis p {
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+/* Botão de Leitura */
+.btn-read {
+  display: inline-block;
+  background-color: #8d4dba;
+  color: #ffffff;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-read:hover {
+  background-color: #72379d;
+}
